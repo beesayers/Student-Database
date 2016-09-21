@@ -11,6 +11,7 @@ Node:     Student* data, Node* next, Node* skipnext
 SLL:      Node* head, Node* skipprevious, Node* tail
 
 Purpose of objects:
+
 The Student object holds all information about each student that has been added to the linked list.
 
 The Node object holds a student object "data", a node object "next" which points to the next node in the linked list, and a node object "skipnext" which points to the next "range" in the list.
@@ -18,6 +19,7 @@ The Node object holds a student object "data", a node object "next" which points
 The SLL object holds a node object "head" which points to the first node within the linked list, a node object "skipprevious" which is used to point to nodes whose skipnext field is not the null pointer, and a "tail" which is used to quickly add additional nodes within the first SLL.
 
 How it works:
+
 The program allows user to add one student at a time, delete one student at a time, and print students within a certain range either by GPA, major, or group ID.  The range for GPA is in .5 decrements from 4.0 to 0.0 (i.e. 4.0-3.5, 3.49... - 3.0, etc.)  The range for major is one integer (i.e. 0, 100, 200, etc.). The range for group ID is one integer (i.e. 0, 1, 2, etc.).  The program prompts the user to ask if they would like to add, delete or print a student.  
 
 When a student is added, the student object is stored within a node and the program then parses through the list until it finds the correct location for the node in order of GPA, major, or group ID. 
