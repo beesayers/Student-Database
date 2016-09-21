@@ -10,7 +10,9 @@ The purpose of this program is to demonstrate clear understanding of pointers an
 Objects used and their variables:
 ---------------------------------------------------------------------------------------------------------------------------------------
 Student:  string* name, string* username, float* gpa, int* major, int* group id
+
 Node:     Student* data, Node* next, Node* skipnext
+
 SLL:      Node* head, Node* skipprevious, Node* tail
 
 Description of objects:
