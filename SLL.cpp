@@ -366,7 +366,7 @@ void SLL::deleteInOrder(string* deletetarget)
 			{						// if current is the head
 				head = tempnode->getNext();
 				if (head != nullptr)
-				{
+				{						
 					head->setSkipNext(tempnode->getSkipNext());
 				}
 				done = true;
@@ -395,12 +395,11 @@ void SLL::deleteInOrder(string* deletetarget)
 			}
 
 			else
-			{
+			{						// if current is in the middle of its range
 				previous->setNext(tempnode->getNext());
 				done = true;
 				delete tempnode;
 			}
-
 		}
 
 		else if (tempnode->getNext() == nullptr)
@@ -411,13 +410,12 @@ void SLL::deleteInOrder(string* deletetarget)
 		if (!done)
 		{
 			if (skipprevious->getSkipNext() == tempnode)
-			{						//
+			{						// if skipprevious->skipnext points to current, update skipprevious to current
 				skipprevious = tempnode;
 				skipprevious->setSkipNext(tempnode->getSkipNext());
 			}
 			previous = tempnode;
 			tempnode = tempnode->getNext();
-			
 		}
 
 		if (done)

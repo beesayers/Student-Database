@@ -188,5 +188,14 @@ int main()
 			done = true;
 		}
 	} while (!done);
+
+	delete input;
+	delete temp; 
+	delete originalSLL;
+	delete gpaSLL;
+	delete majorSLL;
+	delete groupidSLL;
+
+
 	return 0;
 }

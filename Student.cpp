@@ -1,16 +1,14 @@
 #include "Student.h"
 #include <iostream>
 using namespace std;
-/*Student::Student()
-{
-}*/
 
 Student::~Student()
 {
-/*	delete studentname;
+	delete studentname;
 	delete studentusername;
 	delete gpa;
-	delete group;*/
+	delete major;
+	delete groupID;
 }
 
 Student::Student()
