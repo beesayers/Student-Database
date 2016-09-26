@@ -9,11 +9,11 @@ The purpose of this program is to demonstrate clear understanding of pointers an
 
 Objects used and their variables:
 ---------------------------------------------------------------------------------------------------------------------------------------
-Student:  string* name, string* username, float* gpa, int* major, int* group id
+Student:    |string* name|string* username|float* gpa|int* major|int* groupid
 
-Node:     Student* data, Node* next, Node* skipnext
+Node:       Student* data|Node* next|Node* skipnext
 
-SLL:      Node* head, Node* skipprevious, Node* tail
+SLL:        Node* head|Node* skipprevious|Node* tail
 
 Description of objects:
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -25,7 +25,7 @@ The SLL object holds a node object "head" which points to the first node within 
 
 How it works:
 ---------------------------------------------------------------------------------------------------------------------------------------
-The program allows user to add one student at a time, delete one student at a time, and print students within a certain range either by GPA, major, or group ID.  The range for GPA is in .5 decrements from 4.0 to 0.0 (i.e. 4.0-3.5, 3.49... - 3.0, etc.)  The range for major is one integer (i.e. 0, 100, 200, etc.). The range for group ID is one integer (i.e. 0, 1, 2, etc.).  The program prompts the user to ask if they would like to add, delete or print a student.  
+The program allows user to add one student at a time, delete one student at a time, and print students within a certain range either by GPA, major, or group ID.  The range for GPA is in .5 decrements from 4.0 to 0.0 (i.e. 4.0-3.5, 3.49-3.0, etc.)  The range for major is one integer (i.e. 0, 100, 200, etc.). The range for group ID is one integer (i.e. 0, 1, 2, etc.).  The program prompts the user to ask if they would like to add, delete or print a student.  
 
 When a student is added, the student object is stored within a node and the program then parses through the list until it finds the correct location for the node in order of GPA, major, or group ID. 
 
@@ -33,4 +33,4 @@ When a student is deleted, the program parses through the list until it finds th
 
 When the user wishes to print a range of students, the program prompts the user whether they would like to print by order of GPA, major, or group ID, and prompts again for the range the user would like to print.  All students within the selected range are then printed to screen.
 
-When the user wishes to end the program, they only need enter "no" when prompted if they wish to continue the program.
+When the user wishes to end the program, they only need enter "no" when prompted "Would you like to continue the program?".
